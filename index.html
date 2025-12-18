@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>ElectroStar ⚡ Tienda Online</title>
+<meta name="description" content="ElectroStar: gadgets y electrónicos pequeños. Comprá fácil con Mercado Pago. Envíos rápidos.">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0b14;--card:#14142a;--neon:#ff2bd6;--cyan:#00ffd5;--txt:#f5f7ff}
+:root{
+  --bg:#0b0b14; --card:#121225; --neon:#ff2bd6; --cyan:#00ffd5; --txt:#f5f7ff;
+}
 *{box-sizing:border-box}
-body{margin:0;background:radial-gradient(900px 500px at 10% -10%,#2a0b3a,transparent),
-radial-gradient(700px 500px at 90% 10%,#003a34,transparent),var(--bg);color:var(--txt);font-family:Inter}
-header{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;position:sticky;top:0;background:rgba(11,11,20,.8);backdrop-filter:blur(8px)}
-.brand{display:flex;gap:10px;align-items:center}
-.brand h1{font-family:Orbitron;letter-spacing:.1em;margin:0}
-.cta{background:linear-gradient(90deg,var(--neon),var(--cyan));color:#000;padding:12px 18px;border-radius:999px;font-weight:800;text-decoration:none}
-.hero{text-align:center;padding:64px 22px}
-.hero h2{font-family:Orbitron;font-size:clamp(26px,5vw,46px)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;padding:22px}
-.card{background:linear-gradient(180deg,#191936,#101024);border-radius:18px;padding:16px;box-shadow:0 0 0 1px rgba(255,255,255,.06)}
-.card img{width:100%;border-radius:12px}
-.price{font-size:22px;font-weight:800;margin:6px 0}
-.buy{display:block;text-align:center;margin-top:10px;padding:12px;border-radius:12px;background:linear-gradient(90deg,var(--cyan),var(--neon));color:#000;font-weight:800;text-decoration:none}
-footer{text-align:center;padding:24px;opacity:.8}
+body{margin:0;background:radial-gradient(1200px 600px at 10% -10%,#2a0b3a,transparent),
+radial-gradient(800px 500px at 90% 10%,#003a34,transparent),var(--bg);color:var(--txt);font-family:Inter}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;position:sticky;top:0;background:rgba(11,11,20,.75);backdrop-filter:blur(8px);z-index:9}
+.brand{display:flex;gap:12px;align-items:center}
+.brand img{height:44px}
+.brand h1{font-family:Orbitron;letter-spacing:.08em;margin:0}
+.cta{padding:12px 18px;border-radius:999px;background:linear-gradient(90deg,var(--neon),var(--cyan));color:#000;font-weight:700;text-decoration:none}
+.hero{padding:72px 22px;text-align:center}
+.hero h2{font-family:Orbitron;font-size:clamp(28px,5vw,48px);margin:0 0 12px}
+.hero p{opacity:.9;max-width:760px;margin:0 auto 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;padding:0 22px 32px}
+.card{background:linear-gradient(180deg,#171733,#101024);border-radius:18px;padding:18px;box-shadow:0 0 0 1px rgba(255,255,255,.06)}
+.card h3{margin:10px 0 6px}
+.price{font-size:22px;font-weight:800}
+.buy{display:block;margin-top:12px;text-align:center;padding:12px;border-radius:12px;background:linear-gradient(90deg,var(--cyan),var(--neon));color:#000;font-weight:800;text-decoration:none}
+.badges{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:22px}
+.badge{padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.08)}
+.faq{padding:22px;max-width:900px;margin:auto}
+.faq h4{margin:14px 0 6px}
+footer{padding:24px;text-align:center;opacity:.85}
 </style>
 </head>
 
@@ -29,70 +38,82 @@ footer{text-align:center;padding:24px;opacity:.8}
 
 <header>
   <div class="brand">
+    <!-- Reemplazá logo.png por tu archivo -->
+    <img src="logo.png" alt="ElectroStar">
     <h1>ELECTROSTAR</h1>
   </div>
-  <a href="#productos" class="cta">Comprar ahora</a>
+  <a class="cta" href="#productos">Comprar ahora</a>
 </header>
 
 <section class="hero">
-  <h2>Encendé tu mundo con tecnología ⚡</h2>
-  <p>Gadgets modernos · Compra fácil · Mercado Pago</p>
+  <h2>Encendé tu mundo con tecnología inteligente ⚡</h2>
+  <p>Gadgets electrónicos prácticos, modernos y listos para usar. Comprá fácil con Mercado Pago.</p>
+  <a class="cta" href="#productos">Ver productos</a>
 </section>
 
 <section id="productos" class="grid">
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46">
     <h3>Samsung Galaxy Buds Pro</h3>
     <p>Sonido premium · Cancelación activa</p>
     <div class="price">$49.999</div>
-    <a class="buy" href="https://mpago.la/32zC5jC" target="_blank">Comprar</a>
+    <a class="buy" href="https://mpago.la/32zC5jC" target="_blank">Comprar con Mercado Pago</a>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df">
     <h3>Ultrapods Pro Wireless 5.3</h3>
-    <p>Display digital · Bluetooth 5.3</p>
+    <p>Display digital · Colores disponibles</p>
     <div class="price">$19.999</div>
-    <a class="buy" href="https://mpago.la/2rXNSXG" target="_blank">Comprar</a>
+    <a class="buy" href="https://mpago.la/2rXNSXG" target="_blank">Comprar con Mercado Pago</a>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90">
     <h3>Auriculares Vincha Bluetooth P9</h3>
-    <p>Cómodos · Batería prolongada</p>
+    <p>Cómodos · Batería larga duración</p>
     <div class="price">$24.999</div>
-    <a class="buy" href="https://mpago.la/2hMEmXT" target="_blank">Comprar</a>
+    <a class="buy" href="https://mpago.la/2hMEmXT" target="_blank">Comprar con Mercado Pago</a>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1518441902117-fdbb972a4d6d">
-    <h3>Parlante Bluetooth JBL</h3>
-    <p>Luces RGB · Sonido potente</p>
+    <h3>Parlante Bluetooth JBL RGB</h3>
+    <p>Sonido potente · Luces LED</p>
     <div class="price">$29.999</div>
-    <a class="buy" href="https://mpago.la/1rVrJH4" target="_blank">Comprar</a>
+    <a class="buy" href="https://mpago.la/1rVrJH4" target="_blank">Comprar con Mercado Pago</a>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
     <h3>Termo Stanley Celeste</h3>
-    <p>Acero inoxidable · Manija</p>
+    <p>Acero inoxidable · Manija y sorbete</p>
     <div class="price">$34.999</div>
-    <a class="buy" href="https://mpago.la/1RjW7Ts" target="_blank">Comprar</a>
+    <a class="buy" href="https://mpago.la/1RjW7Ts" target="_blank">Comprar con Mercado Pago</a>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a">
     <h3>Termo Stanley Rosa 1200 ml</h3>
-    <p>Alta duración · Tendencia</p>
+    <p>Tendencia · Mantiene frío/calor</p>
     <div class="price">$36.999</div>
-    <a class="buy" href="https://mpago.la/2pWHvDG" target="_blank">Comprar</a>
+    <a class="buy" href="https://mpago.la/2pWHvDG" target="_blank">Comprar con Mercado Pago</a>
   </div>
 
 </section>
 
+<section class="badges">
+  <div class="badge">🚚 Envíos rápidos</div>
+  <div class="badge">💳 Mercado Pago</div>
+  <div class="badge">🛡️ Garantía</div>
+  <div class="badge">📱 Optimizada móvil</div>
+</section>
+
+<section class="faq">
+  <h3>Preguntas frecuentes</h3>
+  <h4>¿Cómo compro?</h4><p>Elegís el producto y pagás con Mercado Pago.</p>
+  <h4>¿Medios de pago?</h4><p>Tarjeta, débito, transferencia y cuotas.</p>
+  <h4>¿Envíos?</h4><p>Envíos a todo el país.</p>
+  <h4>¿Garantía?</h4><p>Todos los productos incluyen garantía.</p>
+</section>
+
 <footer>
-  © 2025 ElectroStar · Pagos seguros con Mercado Pago
+  © 2025 ElectroStar — Todos los derechos reservados
 </footer>
 
 </body>
